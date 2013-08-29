@@ -1,0 +1,18 @@
+{
+  "name": "ModernUI",
+  "version": "0.0.1",
+  "author": "Paolo Nicodemo <paolonicodemo@gmail.com>",
+  "description": "A simple css theme inspired on metro UI",
+  "contributors": [
+    "Paolo Nicodemo"
+  ],
+  "keywords": [],
+  "dependencies": {},
+  "noAnalyze": true,
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-compass": "~0.5.0"
+  },
+  "optionalDependencies": {}
+}
