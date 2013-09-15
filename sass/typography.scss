@@ -1,25 +1,95 @@
 @import 'compass';
 
-
 $round-to-nearest-half-line : true;
 
-@include establish-baseline;
+@font-face {
+  font-family: "PT Serif Caption";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Cambria"), local("PT Serif Caption"), local("PTSerif-Caption"), url(https://themes.googleusercontent.com/static/fonts/ptserifcaption/v4/7xkFOeTxxO1GMC1suOUYWWhBabBbEjGd1iRmpyoZukE.woff) format('woff');
+}
 
-html {@include debug-vertical-alignment()}
+@font-face {
+  font-family: "Open Sans Light";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Segoe UI Light"), local("Open Sans Light"), local("OpenSans-Light"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTZ1r3JsPcQLi8jytr04NNhU.woff) format('woff');
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Segoe UI"), local("Open Sans"), local("OpenSans"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/K88pR3goAWT7BTt32Z01mz8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Segoe UI Bold"), local("Open Sans Bold"), local("OpenSans-Bold"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzJ1r3JsPcQLi8jytr04NNhU.woff) format('woff');
+}
+
+h1,h2,h3,h4,h5,h6 {
+font-family:$font-family-sans-serif;
+    font-weight:200;
+}
 
 h1 {
-    @include adjust-font-size-to(40px,1.9); 
+    @include adjust-font-size-to(56px,4); 
+    margin: 0 auto ;
 }
 
-h2 {@include adjust-font-size-to(32px,1.9);  }
+h2 {
+    @include adjust-font-size-to(38px,2); 
+    margin: 0 auto;
+}
 
-h3 {@include adjust-font-size-to(28px,1.85);  }
+h3 {
+    @include adjust-font-size-to(30px,2); 
+    margin: 0 auto;
+}
 
-h4 {@include adjust-font-size-to(24px,1.7);  }
+h4 {
+    @include adjust-font-size-to(24px,1);  
+    margin: 0 auto;
+}
 
-h5 {@include adjust-font-size-to(18px,0.75);  }
+h5 {
+    @include adjust-font-size-to(16px,0.75);
+    margin: 0 auto rhythm(0.25, 16px);
+}
 
 h6 {
-    @include adjust-font-size-to(14px,1);
-    margin: 0 auto rhythm(0, 14px);
+    @include adjust-font-size-to(12px,0.5);
+    margin: 0 auto rhythm(0.5, 12px);
 }
+
+p {
+    @include adjust-font-size-to(16px,1);
+    margin:  rhythm(0.5, 16px) auto;
+}
+
+.text-left {
+    text-align:left;
+}
+
+.text-center {
+    text-align:center
+}
+
+.text-right {
+    text-align:right;
+}
+
+.text-muted {
+    color : $color-muted !important;
+}
+
+.text-info {
+color : $color-info !important;
+}
+
+.text-alert {color : $color-alert !important;}
+.text-warning {color : $color-warning !important;}
+.text-success {color : $color-success !important;}

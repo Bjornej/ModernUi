@@ -416,67 +416,139 @@ table {
 
 /* line 3, ../sass/reset.scss */
 html {
-  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Segoe UI Light_", "Open Sans Light", Verdana, Arial, Helvetica, sans-serif;
 }
 
-/* line 61, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
-* html {
-  font-size: 100%;
+/* line 9, ../sass/reset.scss */
+html,
+body,
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* line 64, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
-html {
-  font-size: 16px;
-  line-height: 1.5em;
+@font-face {
+  font-family: "PT Serif Caption";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Cambria"), local("PT Serif Caption"), local("PTSerif-Caption"), url(https://themes.googleusercontent.com/static/fonts/ptserifcaption/v4/7xkFOeTxxO1GMC1suOUYWWhBabBbEjGd1iRmpyoZukE.woff) format("woff");
 }
 
-/* line 8, ../sass/typography.scss */
-html {
-  background-image: -webkit-gradient(linear, 50% 100%, 50% 0%, color-stop(5%, rgba(0, 0, 0, 0.5)), color-stop(5%, rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  background-image: linear-gradient(bottom, rgba(0, 0, 0, 0.5) 5%, rgba(0, 0, 0, 0) 5%);
-  -webkit-background-size: 100% 1.5em;
-  -moz-background-size: 100% 1.5em;
-  -o-background-size: 100% 1.5em;
-  background-size: 100% 1.5em;
-  background-position: left top;
+@font-face {
+  font-family: "Open Sans Light";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Segoe UI Light"), local("Open Sans Light"), local("OpenSans-Light"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTZ1r3JsPcQLi8jytr04NNhU.woff) format("woff");
 }
 
-/* line 10, ../sass/typography.scss */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Segoe UI"), local("Open Sans"), local("OpenSans"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/K88pR3goAWT7BTt32Z01mz8E0i7KZn-EPnyo3HZu7kw.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Segoe UI Bold"), local("Open Sans Bold"), local("OpenSans-Bold"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzJ1r3JsPcQLi8jytr04NNhU.woff) format("woff");
+}
+
+/* line 33, ../sass/typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Segoe UI Light_", "Open Sans Light", Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+/* line 38, ../sass/typography.scss */
 h1 {
-  font-size: 2.5em;
-  line-height: 1.14em;
+  font-size: 3.5em;
+  line-height: 1.71429em;
+  margin: 0 auto;
 }
 
-/* line 14, ../sass/typography.scss */
+/* line 43, ../sass/typography.scss */
 h2 {
-  font-size: 2em;
-  line-height: 1.425em;
+  font-size: 2.375em;
+  line-height: 1.26316em;
+  margin: 0 auto;
 }
 
-/* line 16, ../sass/typography.scss */
+/* line 48, ../sass/typography.scss */
 h3 {
-  font-size: 1.75em;
-  line-height: 1.58571em;
+  font-size: 1.875em;
+  line-height: 1.6em;
+  margin: 0 auto;
 }
 
-/* line 18, ../sass/typography.scss */
+/* line 53, ../sass/typography.scss */
 h4 {
   font-size: 1.5em;
-  line-height: 1.7em;
-}
-
-/* line 20, ../sass/typography.scss */
-h5 {
-  font-size: 1.125em;
   line-height: 1em;
+  margin: 0 auto;
 }
 
-/* line 22, ../sass/typography.scss */
+/* line 58, ../sass/typography.scss */
+h5 {
+  font-size: 1em;
+  line-height: 1.125em;
+  margin: 0 auto 0.375em;
+}
+
+/* line 63, ../sass/typography.scss */
 h6 {
-  font-size: 0.875em;
-  line-height: 1.71429em;
-  margin: 0 auto 0em;
+  font-size: 0.75em;
+  line-height: 1em;
+  margin: 0 auto 1em;
+}
+
+/* line 68, ../sass/typography.scss */
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 0.75em auto;
+}
+
+/* line 73, ../sass/typography.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 77, ../sass/typography.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 81, ../sass/typography.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 85, ../sass/typography.scss */
+.text-muted {
+  color: #999999 !important;
+}
+
+/* line 89, ../sass/typography.scss */
+.text-info {
+  color: #1ba1e2 !important;
+}
+
+/* line 93, ../sass/typography.scss */
+.text-alert {
+  color: #e51400 !important;
+}
+
+/* line 94, ../sass/typography.scss */
+.text-warning {
+  color: #fa6800 !important;
+}
+
+/* line 95, ../sass/typography.scss */
+.text-success {
+  color: #60a917 !important;
 }
