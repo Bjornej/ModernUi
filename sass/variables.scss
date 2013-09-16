@@ -7,6 +7,7 @@ $font-family-sans-serif : 'Segoe UI Light_', 'Open Sans Light', Verdana, Arial, 
 // "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
 //alternativa  "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 
+$font-family-body:'Segoe UI_', 'Open Sans', Verdana, Arial, Helvetica, sans-serif;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:  Consolas, monaco, monospace;
 $font-family-base : $font-family-sans-serif;
@@ -18,3 +19,6 @@ $color-info : #1ba1e2 ;
 $color-alert :#e51400;
 $color-warning :#fa6800;
 $color-success :#60a917;
+
+
+$light-grey:#E9EFF2;

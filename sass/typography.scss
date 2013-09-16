@@ -30,6 +30,7 @@ $round-to-nearest-half-line : true;
   src: local("Segoe UI Bold"), local("Open Sans Bold"), local("OpenSans-Bold"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzJ1r3JsPcQLi8jytr04NNhU.woff) format('woff');
 }
 
+
 h1,h2,h3,h4,h5,h6 {
 font-family:$font-family-sans-serif;
     font-weight:200;
@@ -93,3 +94,41 @@ color : $color-info !important;
 .text-alert {color : $color-alert !important;}
 .text-warning {color : $color-warning !important;}
 .text-success {color : $color-success !important;}
+
+abbr {
+    cursor:help;
+}
+
+address {
+    font-size:$base-font-size;
+    line-height:$base-line-height;
+}
+
+blockquote {
+    border-left: 4px $light-grey solid;
+    padding-left: 10px;
+
+    small {
+        color: $color-muted;
+        &::before {
+            content: "\2014 \00A0";
+        }
+    }
+
+    &.pull-right {
+        text-align:right;
+        border-right: 4px $light-grey solid;
+        padding-right: 10px;
+        border-left:none;
+        padding-left:0;
+
+        small {
+            &::before {
+                content: "";
+            }
+            &::after {
+                content: " \2014 \00A0";
+            }
+        }
+    }
+}

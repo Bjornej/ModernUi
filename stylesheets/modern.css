@@ -416,7 +416,7 @@ table {
 
 /* line 3, ../sass/reset.scss */
 html {
-  font-family: "Segoe UI Light_", "Open Sans Light", Verdana, Arial, Helvetica, sans-serif;
+  font-family: "Segoe UI_", "Open Sans", Verdana, Arial, Helvetica, sans-serif;
 }
 
 /* line 9, ../sass/reset.scss */
@@ -458,97 +458,138 @@ body,
   src: local("Segoe UI Bold"), local("Open Sans Bold"), local("OpenSans-Bold"), url(https://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzJ1r3JsPcQLi8jytr04NNhU.woff) format("woff");
 }
 
-/* line 33, ../sass/typography.scss */
+/* line 34, ../sass/typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Segoe UI Light_", "Open Sans Light", Verdana, Arial, Helvetica, sans-serif;
   font-weight: 200;
 }
 
-/* line 38, ../sass/typography.scss */
+/* line 39, ../sass/typography.scss */
 h1 {
   font-size: 3.5em;
   line-height: 1.71429em;
   margin: 0 auto;
 }
 
-/* line 43, ../sass/typography.scss */
+/* line 44, ../sass/typography.scss */
 h2 {
   font-size: 2.375em;
   line-height: 1.26316em;
   margin: 0 auto;
 }
 
-/* line 48, ../sass/typography.scss */
+/* line 49, ../sass/typography.scss */
 h3 {
   font-size: 1.875em;
   line-height: 1.6em;
   margin: 0 auto;
 }
 
-/* line 53, ../sass/typography.scss */
+/* line 54, ../sass/typography.scss */
 h4 {
   font-size: 1.5em;
   line-height: 1em;
   margin: 0 auto;
 }
 
-/* line 58, ../sass/typography.scss */
+/* line 59, ../sass/typography.scss */
 h5 {
   font-size: 1em;
   line-height: 1.125em;
   margin: 0 auto 0.375em;
 }
 
-/* line 63, ../sass/typography.scss */
+/* line 64, ../sass/typography.scss */
 h6 {
   font-size: 0.75em;
   line-height: 1em;
   margin: 0 auto 1em;
 }
 
-/* line 68, ../sass/typography.scss */
+/* line 69, ../sass/typography.scss */
 p {
   font-size: 1em;
   line-height: 1.5em;
   margin: 0.75em auto;
 }
 
-/* line 73, ../sass/typography.scss */
+/* line 74, ../sass/typography.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 77, ../sass/typography.scss */
+/* line 78, ../sass/typography.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 81, ../sass/typography.scss */
+/* line 82, ../sass/typography.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 85, ../sass/typography.scss */
+/* line 86, ../sass/typography.scss */
 .text-muted {
   color: #999999 !important;
 }
 
-/* line 89, ../sass/typography.scss */
+/* line 90, ../sass/typography.scss */
 .text-info {
   color: #1ba1e2 !important;
 }
 
-/* line 93, ../sass/typography.scss */
+/* line 94, ../sass/typography.scss */
 .text-alert {
   color: #e51400 !important;
 }
 
-/* line 94, ../sass/typography.scss */
+/* line 95, ../sass/typography.scss */
 .text-warning {
   color: #fa6800 !important;
 }
 
-/* line 95, ../sass/typography.scss */
+/* line 96, ../sass/typography.scss */
 .text-success {
   color: #60a917 !important;
+}
+
+/* line 98, ../sass/typography.scss */
+abbr {
+  cursor: help;
+}
+
+/* line 102, ../sass/typography.scss */
+address {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* line 107, ../sass/typography.scss */
+blockquote {
+  border-left: 4px #e9eff2 solid;
+  padding-left: 10px;
+}
+/* line 111, ../sass/typography.scss */
+blockquote small {
+  color: #999999;
+}
+/* line 113, ../sass/typography.scss */
+blockquote small::before {
+  content: "\2014 \00A0";
+}
+/* line 118, ../sass/typography.scss */
+blockquote.pull-right {
+  text-align: right;
+  border-right: 4px #e9eff2 solid;
+  padding-right: 10px;
+  border-left: none;
+  padding-left: 0;
+}
+/* line 126, ../sass/typography.scss */
+blockquote.pull-right small::before {
+  content: "";
+}
+/* line 129, ../sass/typography.scss */
+blockquote.pull-right small::after {
+  content: " \2014 \00A0";
 }
