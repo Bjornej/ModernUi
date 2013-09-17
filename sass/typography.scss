@@ -132,3 +132,52 @@ blockquote {
         }
     }
 }
+
+ul {
+    ul {
+        padding-left:20px;
+    }
+}
+
+ul.list-unstyled {
+    padding-left:20px;
+    
+    & > li {
+        list-style-type:none;
+    }
+}
+
+ul.list-inline {
+    list-style:none;
+
+    & > li {
+        padding: 0 5px;
+        display:inline-block;
+    }
+}
+
+dl {
+    dt {
+        font-weight:bold;
+    }
+
+    dd {
+        margin-left:20px;
+    }
+}
+
+dl.dl-horizontal {
+    dt {
+        float: left;
+        width: 160px;
+        overflow: hidden;
+        clear: left;
+        text-align: right;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    dd {
+        margin-left: 180px;
+    }
+}
