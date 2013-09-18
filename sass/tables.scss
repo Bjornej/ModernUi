@@ -1,0 +1,70 @@
+.table {
+    width:100%;
+    text-align:left;
+    border-collapse:collapse;
+
+    td,th{
+        padding:6px;
+    }
+
+    thead {
+        font-weight:bold;
+        border-bottom:3px $light-grey solid;
+    }
+
+    tbody {
+        tr {
+            border-top:1px $light-grey solid;
+            border-bottom:1px $light-grey solid;
+        }
+    }
+
+    &.table-striped {
+        tbody {
+             tr:nth-child(odd) {
+                background: lighten($light-grey,4%);
+             }
+        }
+    }
+
+    &.table-bordered {
+        td {
+            border:1px $light-grey solid;
+        }
+    }
+
+    &.table-hover {
+        tbody {
+            tr {
+                &:hover {
+                    background: lighten($light-grey,4%);
+                }  
+            }
+        }
+    }
+
+    &.table-condensed {
+        td,th{
+            padding:3px;
+        }
+    }
+
+    tr {
+        &.active {
+            background: lighten($light-grey,4%);
+        }
+
+        &.success {
+            background: lighten($color-alert,30%);
+        }
+
+        &.warning {
+            background: lighten($color-warning,30%);
+        }
+
+        &.danger {
+            background: lighten($color-success ,30%);
+        }
+    }
+}
+

@@ -641,3 +641,56 @@ dl.dl-horizontal dt {
 dl.dl-horizontal dd {
   margin-left: 180px;
 }
+
+/* line 1, ../sass/tables.scss */
+.table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+/* line 6, ../sass/tables.scss */
+.table td, .table th {
+  padding: 6px;
+}
+/* line 10, ../sass/tables.scss */
+.table thead {
+  font-weight: bold;
+  border-bottom: 3px #e9eff2 solid;
+}
+/* line 16, ../sass/tables.scss */
+.table tbody tr {
+  border-top: 1px #e9eff2 solid;
+  border-bottom: 1px #e9eff2 solid;
+}
+/* line 24, ../sass/tables.scss */
+.table.table-striped tbody tr:nth-child(odd) {
+  background: #f6f8fa;
+}
+/* line 31, ../sass/tables.scss */
+.table.table-bordered td {
+  border: 1px #e9eff2 solid;
+}
+/* line 39, ../sass/tables.scss */
+.table.table-hover tbody tr:hover {
+  background: #f6f8fa;
+}
+/* line 47, ../sass/tables.scss */
+.table.table-condensed td, .table.table-condensed th {
+  padding: 3px;
+}
+/* line 53, ../sass/tables.scss */
+.table tr.active {
+  background: #f6f8fa;
+}
+/* line 57, ../sass/tables.scss */
+.table tr.success {
+  background: #ff8a7f;
+}
+/* line 61, ../sass/tables.scss */
+.table tr.warning {
+  background: #ffc194;
+}
+/* line 65, ../sass/tables.scss */
+.table tr.danger {
+  background: #adeb6e;
+}
