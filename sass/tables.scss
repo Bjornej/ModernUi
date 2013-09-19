@@ -8,6 +8,9 @@
     }
 
     thead {
+        th {
+            text-align:left;
+        }
         font-weight:bold;
         border-bottom:3px $light-grey solid;
     }
