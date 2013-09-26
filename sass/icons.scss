@@ -1,13 +1,10 @@
 
 @font-face {
-	font-family: 'modern';
-	src:url('fonts/modern.eot');
-	src:url('fonts/modern.eot?#iefix') format('embedded-opentype'),
-		url('fonts/modern.woff') format('woff'),
-		url('fonts/modern.ttf') format('truetype'),
-		url('fonts/modern.svg#modern') format('svg');
-	font-weight: normal;
-	font-style: normal;
+font-family: 'modern';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./font/modern.eot');
+  src: url('./font/modern.svg#modern') format('svg'), url('./font/modern.eot?#iefix') format('embedded-opentype'), url('./font/modern.woff') format('woff'), url('./font/modern.ttf') format('truetype');
 }
 
 
