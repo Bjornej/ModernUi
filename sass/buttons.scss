@@ -1,0 +1,130 @@
+.btn {
+    background-color:$light-grey;
+    border:none;
+    color:black;
+    height:32px;
+    display: inline-block;
+    text-align:center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    padding:1px 8px;
+    margin:5px 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+    &.disabled,&[disabled] {
+        pointer-events: none;
+        cursor: not-allowed;
+        opacity: 0.65;
+        filter: alpha(opacity=65);
+    }
+
+    &:hover {
+        background-color: darken($light-grey,3%);
+    }
+
+    &.btn-primary {
+        background-color:$primaryColor;
+        color:$primaryTextColor;
+
+        &:hover {
+            background-color: darken($primaryColor,3%);
+        }
+    }
+
+    &.btn-success {
+        background-color:$color-success;
+        color:white;
+
+        &:hover {
+            background-color: darken($color-success,3%);
+        }
+    }
+
+    &.btn-info {
+        background-color:$color-info;
+        color:white;
+
+        &:hover {
+            background-color: darken($color-info,3%);
+        }
+    }
+
+    &.btn-warning {
+        background-color:$color-warning;
+        color:white;
+
+        &:hover {
+            background-color: darken($color-warning,10%);
+        }
+    }
+
+    &.btn-danger {
+        background-color:$color-alert;
+        color:white;
+
+        &:hover {
+            background-color: darken($color-alert,3%);
+        }
+    }
+
+    &.btn-link {
+        background-color:transparent;
+        color:rgb(0, 0, 238);
+        &:hover{
+            text-decoration:underline;
+        }
+    }
+
+    &.btn-lg {
+        padding:10px 16px;
+        height:48px;
+    }
+
+    &.btn-sm {
+        height:28px;
+    }
+
+    &.btn-xs {
+        height:22px;
+    }
+}
+
+a.btn {
+    text-decoration:none;
+    padding-top:6px;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-block + .btn-block {
+    margin-top: 5px;
+}
+
+.btn-group {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+
+    .btn + .btn {
+        margin-left:-4px;
+    }
+}
+
+.btn-toolbar {
+    &:after{
+        clear:both;
+    }
+
+    &:after,&:before {
+        display: table;
+        content: " ";
+    }
+}

@@ -535,7 +535,7 @@ p {
 
 /* line 90, ../sass/typography.scss */
 .text-info {
-  color: #1ba1e2 !important;
+  color: #46788d !important;
 }
 
 /* line 94, ../sass/typography.scss */
@@ -790,6 +790,142 @@ input[type="radio"], input[type="checkbox"] {
   margin-top: 0;
   margin-bottom: 0;
   text-align: right;
+}
+
+/* line 1, ../sass/buttons.scss */
+.btn {
+  background-color: #e9eff2;
+  border: none;
+  color: black;
+  height: 32px;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  padding: 1px 8px;
+  margin: 5px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+/* line 19, ../sass/buttons.scss */
+.btn.disabled, .btn[disabled] {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+}
+/* line 26, ../sass/buttons.scss */
+.btn:hover {
+  background-color: #dfe8ec;
+}
+/* line 30, ../sass/buttons.scss */
+.btn.btn-primary {
+  background-color: #00b4ff;
+  color: white;
+}
+/* line 34, ../sass/buttons.scss */
+.btn.btn-primary:hover {
+  background-color: #00a9f0;
+}
+/* line 39, ../sass/buttons.scss */
+.btn.btn-success {
+  background-color: #60a917;
+  color: white;
+}
+/* line 43, ../sass/buttons.scss */
+.btn.btn-success:hover {
+  background-color: #589c15;
+}
+/* line 48, ../sass/buttons.scss */
+.btn.btn-info {
+  background-color: #46788d;
+  color: white;
+}
+/* line 52, ../sass/buttons.scss */
+.btn.btn-info:hover {
+  background-color: #416f83;
+}
+/* line 57, ../sass/buttons.scss */
+.btn.btn-warning {
+  background-color: #fa6800;
+  color: white;
+}
+/* line 61, ../sass/buttons.scss */
+.btn.btn-warning:hover {
+  background-color: #c75300;
+}
+/* line 66, ../sass/buttons.scss */
+.btn.btn-danger {
+  background-color: #e51400;
+  color: white;
+}
+/* line 70, ../sass/buttons.scss */
+.btn.btn-danger:hover {
+  background-color: #d61300;
+}
+/* line 75, ../sass/buttons.scss */
+.btn.btn-link {
+  background-color: transparent;
+  color: #0000ee;
+}
+/* line 78, ../sass/buttons.scss */
+.btn.btn-link:hover {
+  text-decoration: underline;
+}
+/* line 83, ../sass/buttons.scss */
+.btn.btn-lg {
+  padding: 10px 16px;
+  height: 48px;
+}
+/* line 88, ../sass/buttons.scss */
+.btn.btn-sm {
+  height: 28px;
+}
+/* line 92, ../sass/buttons.scss */
+.btn.btn-xs {
+  height: 22px;
+}
+
+/* line 97, ../sass/buttons.scss */
+a.btn {
+  text-decoration: none;
+  padding-top: 6px;
+}
+
+/* line 102, ../sass/buttons.scss */
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+/* line 107, ../sass/buttons.scss */
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+
+/* line 111, ../sass/buttons.scss */
+.btn-group {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 116, ../sass/buttons.scss */
+.btn-group .btn + .btn {
+  margin-left: -4px;
+}
+
+/* line 122, ../sass/buttons.scss */
+.btn-toolbar:after {
+  clear: both;
+}
+/* line 126, ../sass/buttons.scss */
+.btn-toolbar:after, .btn-toolbar:before {
+  display: table;
+  content: " ";
 }
 
 @font-face {
