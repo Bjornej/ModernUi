@@ -45,6 +45,11 @@
             margin:5px 0;
         }       
     }
+
+    &.pull-right {
+        right: 0;
+        left: auto;
+    }
 }
 
 .open .dropdown-menu {
@@ -55,4 +60,17 @@
     color:$color-muted;
     font-size:14px;
     font-weight:bold;
+}
+
+.dropup {
+    .dropdown-menu {
+        top: auto;
+        bottom: 100%;
+        margin-bottom: -5px;
+    }
+
+    .caret {
+    border-bottom: 4px solid;
+    border-top: 0 dotted;
+    }
 }
