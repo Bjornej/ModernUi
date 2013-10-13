@@ -1,0 +1,121 @@
+.navbar {
+    display:block;
+    width:100%;
+    position: relative;
+    z-index: 1000;
+    min-height: 40px;
+    height:40px;
+    max-height:40px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    background-color: $primaryColor;
+
+    .navbar-brand {
+        color: $primaryTextColor;
+        background-color: transparent;
+        text-decoration:none;
+        float:left;
+        @include adjust-font-size-to(24px,1);  
+        padding: 8px 10px;
+    }
+
+    .navbar-toggle {
+        display:none; //TODO correct when handling responsive
+    }
+
+    .navbar-header {
+        float:left;
+    }
+
+    .nav {
+        margin:0;
+        list-style-type:none;
+        float:left;
+        padding-left:10px;
+
+        > li {
+             > a {
+                padding:9px 10px;
+                color: $primaryTextColor;
+                text-decoration:none;
+                position: relative;
+                display: block;
+            }
+            float:left;
+            position:relative;
+            display:block;
+        }
+
+        .dropdown-menu {
+            margin-top:-2px !important;
+        }
+    }
+
+    .navbar-form  {
+        padding: 0;
+        margin:0;
+        display:inline-block;
+
+        .form-group{
+            display:inline-block;
+        }
+    }
+
+    .navbar-right {
+        float:right;
+
+        .dropdown-menu {
+            right: 0;
+            left: auto;
+        }
+    }
+
+    .navbar-left {
+        float:left;
+    }
+
+    .navbar-btn {
+        margin-top:3px;
+    }
+
+    .navbar-text {
+        color: $primaryTextColor;
+        margin: 8px;  
+    }
+
+    .navbar-link {
+        text-decoration:none;
+        color: $primaryTextColor;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .navbar-collapse {
+        width:auto;
+    }
+
+    &::after {
+        clear:both;
+    }
+
+    &::before,&::after {
+        display:table;
+        content:"";
+    }
+}
+
+.navbar-fixed-top {
+    position:absolute;
+    top:0;
+}
+
+.navbar-fixed-bottom {
+    position:absolute;
+    bottom:0;
+}
+
+.navbar-static-top {
+    top:0;
+}
