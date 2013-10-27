@@ -1,0 +1,37 @@
+.list-group {
+    padding-left:0;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    border: 1px solid $light-grey;
+
+    text-decoration:none;
+    color: black;
+
+    .badge {
+        float:right;
+    }
+}
+
+a.list-group-item {
+    &.active {
+        background-color:$primaryColor !important;
+        color:$primaryTextColor;
+    }
+
+    &:hover {
+        background: lighten($light-grey,4%);
+    }
+}
+
+.list-group-item-heading {
+    font-weight:bold;
+}
+
+.list-group-item-text {
+    margin-top: 2px;
+}
