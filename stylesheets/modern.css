@@ -1871,6 +1871,105 @@ a.list-group-item:hover {
   margin-top: 2px;
 }
 
+/* line 1, ../sass/panels.scss */
+.panel {
+  border: 1px solid #e9eff2;
+}
+/* line 4, ../sass/panels.scss */
+.panel .panel-heading {
+  padding: 10px 15px;
+  background: #f6f8fa;
+  border-bottom: 1px solid #e9eff2;
+}
+/* line 10, ../sass/panels.scss */
+.panel .panel-body {
+  padding: 15px;
+}
+/* line 14, ../sass/panels.scss */
+.panel .panel-footer {
+  padding: 10px 15px;
+  background: #f6f8fa;
+  border-top: 1px solid #e9eff2;
+}
+
+/* line 21, ../sass/panels.scss */
+.panel.panel-primary {
+  border: 1px solid #00b4ff;
+}
+/* line 24, ../sass/panels.scss */
+.panel.panel-primary .panel-heading, .panel.panel-primary .panel-footer {
+  background-color: #00b4ff;
+  color: white;
+}
+/* line 29, ../sass/panels.scss */
+.panel.panel-primary .panel-heading {
+  border-bottom: 1px solid #00b4ff;
+}
+/* line 33, ../sass/panels.scss */
+.panel.panel-primary .panel-footer {
+  border-top: 1px solid #00b4ff;
+}
+
+/* line 38, ../sass/panels.scss */
+.panel.panel-success {
+  border: 1px solid #60a917;
+}
+/* line 41, ../sass/panels.scss */
+.panel.panel-success .panel-heading {
+  background-color: #60a917;
+  border-bottom: 1px solid #60a917;
+}
+/* line 46, ../sass/panels.scss */
+.panel.panel-success .panel-footer {
+  background-color: #60a917;
+  border-top: 1px solid #60a917;
+}
+
+/* line 52, ../sass/panels.scss */
+.panel.panel-info {
+  border: 1px solid #46788d;
+}
+/* line 55, ../sass/panels.scss */
+.panel.panel-info .panel-heading {
+  background-color: #46788d;
+  border-bottom: 1px solid #46788d;
+}
+/* line 60, ../sass/panels.scss */
+.panel.panel-info .panel-footer {
+  background-color: #46788d;
+  border-top: 1px solid #46788d;
+}
+
+/* line 66, ../sass/panels.scss */
+.panel.panel-warning {
+  border: 1px solid #fa6800;
+}
+/* line 69, ../sass/panels.scss */
+.panel.panel-warning .panel-heading {
+  background-color: #fa6800;
+  border-bottom: 1px solid #fa6800;
+}
+/* line 74, ../sass/panels.scss */
+.panel.panel-warning .panel-footer {
+  background-color: #fa6800;
+  border-top: 1px solid #fa6800;
+}
+
+/* line 80, ../sass/panels.scss */
+.panel.panel-danger {
+  border: 1px solid #ff2d19;
+}
+/* line 83, ../sass/panels.scss */
+.panel.panel-danger .panel-heading {
+  background-color: #ff2d19;
+  border-bottom: 1px solid #ff2d19;
+}
+/* line 88, ../sass/panels.scss */
+.panel.panel-danger .panel-footer {
+  background-color: #ff2d19;
+  border-bottom: 1px solid #ff2d19;
+}
+
 /* line 1, ../sass/dropdown.scss */
 .dropdown {
   position: relative;
